@@ -6,7 +6,6 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.FlowRowScope
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -128,22 +127,6 @@ fun TranslationColumn(
                 )
             )
             GearStylizedText(text = "KR")
-        }
-        Row(
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            RadioButton(
-                selected = translation == Translation.ES,
-                onClick = { onLanguageSelected(Translation.ES) },
-                modifier = modifier.padding(bottom = 8.dp),
-                colors = RadioButtonDefaults.colors(
-                    selectedColor = WarborneColorTheme.borderSkillHightlightColor,
-                    unselectedColor = WarborneColorTheme.borderSkillColor,
-                    disabledSelectedColor = WarborneColorTheme.textBackgroundColor,
-                    disabledUnselectedColor = WarborneColorTheme.textBackgroundColor,
-                )
-            )
-            GearStylizedText(text = "ES")
         }
     }
 }

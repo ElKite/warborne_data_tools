@@ -421,7 +421,6 @@ object DataRepository {
         val tmp =  when (translation) {
             Translation.EN -> "$url$endpoint"
             Translation.RU -> "${url}translation/russian$endpoint"
-            Translation.ES -> "${url}translation/spanish$endpoint"
             Translation.KR -> "${url}translation/korean$endpoint"
         }
         println(tmp)
